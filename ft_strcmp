@@ -1,0 +1,46 @@
+* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rnavea-r <rnavea-r@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/05/05 18:57:05 by rnavea-r          #+#    #+#             */
+/*   Updated: 2025/05/05 19:45:54 by rnavea-r         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+
+int    ft_strcmp(char *s1, char *s2)
+{
+	int	i;
+
+	i = 0;
+	
+	while (s1[i] && s2[i])
+	{
+		if (s1[i] != s2[i])
+			break;
+		i++;
+	}
+	return (s1[i] - s2[i]);
+}
+
+/*int	main()
+{
+	char	*s1 = "hello";
+	char	*s2 = "hella";
+	int		result;
+	
+	result = ft_strcmp(s1, s2);
+	printf("%d\n", result);
+	return (0);
+}*/
+
+
+//Reproduce the behavior of the function strcmp (man strcmp).
+
+Your function must be declared as follows:
+
+int    ft_strcmp(char *s1, char *s2);//
